@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SemantiqueFlou">
+      <UniqueIdentifier>{031a07a9-e10d-487d-b086-529c465c828a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Concepts">
+      <UniqueIdentifier>{b57240ec-66df-4000-9b2e-12a1fcee4854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Concepts">
+      <UniqueIdentifier>{89e193a8-2ed8-4659-9496-748b1746e2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SemantiqueFlou">
+      <UniqueIdentifier>{65405db2-1761-46dd-b43f-edc6e4c9d956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SemantiqueFlou\BinaryExp">
+      <UniqueIdentifier>{c40067d6-2fa0-4844-b3e9-76683e21f5ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SemantiqueFlou\NaryExp">
+      <UniqueIdentifier>{c8a6bff2-9f85-416d-919a-99d8d1827f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SemantiqueFlou\UnaryExpression">
+      <UniqueIdentifier>{9708532f-3df4-459b-ba47-21a4f887d78c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Expression.h">
+      <Filter>Header Files\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="Agg.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="AggMax.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="AggPlus.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="AndMult.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="AndMin.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="mainAnd.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="CogDefuzz.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="MandaniDefuzz.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="BynaryExpression.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="Or.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="OrMax.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="OrPlus.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoThen.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="Then.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="ThenMin.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="ThenMultl.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryExpression.h">
+      <Filter>Header Files\SemantiqueFlou\NaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoDefuzz.h">
+      <Filter>Header Files\SemantiqueFlou\NaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoConclusion.h">
+      <Filter>Header Files\SemantiqueFlou\NaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="Not.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="is.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMinus1.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="isTriangle.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryExpression.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Projet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AndMin.cpp">
+      <Filter>Source Files\SemantiqueFlou</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

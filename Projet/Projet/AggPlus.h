@@ -1,7 +1,7 @@
 #ifndef AGGPLUS_H
 #define AGGPLUS_H
 
-#include "Agg.h"
+#include "AggMax.h"
 
 template <class T>
 class AggPlus : Agg<T> {

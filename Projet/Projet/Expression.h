@@ -2,9 +2,13 @@
 #define EXPRESSION_H
 #include "pch.h"
 
-template <class T>
-class Expression {
-
-
-};
+namespace core {
+	template <class T>
+	class Expression {
+		Expresion() {}
+		virtual ~Expresion() {};
+		
+		virtual T evaluate() const = 0;
+	};
+}
 #endif

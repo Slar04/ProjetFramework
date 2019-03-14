@@ -3,13 +3,17 @@
 
 #include "Or.h"
 
-template <class T>
-class OrMax : OR<T> {
-public:
+namespace fuzzy {
+	template <class T>
+	class OrMax : OR<T> {
+	public:
 
-	OrMax(){}
-	virtual ~OrMax(){}
-	virtual T& evaluate(Expression&, Expression&);
-};
+		OrMax() {}
+		virtual ~OrMax() {}
+		virtual T& evaluate(core::Expression<T>*l, core::Expression<T>*r) const;
+	};
 
+	
+
+}
 #endif

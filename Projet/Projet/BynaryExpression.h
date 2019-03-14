@@ -3,9 +3,12 @@
 #include "pch.h"
 #include "Expression.h"
 
-template <class T>
-class BynaryExpression {
-public:
-	virtual T& evaluate(Expression&, Expression&) const=0;
-};
+namespace core {
+	template <class T>
+	class BynaryExpression {
+	public:
+		BinaryExpression() {};
+		virtual T evaluate(Expression<T>*, Expression<T>*) const = 0;
+	};
+}
 #endif

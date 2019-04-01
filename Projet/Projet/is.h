@@ -2,9 +2,9 @@
 #define IS_H
 
 #include "UnaryExpression.h"
-namespace fuzzy {
+namespace SemantiqueFloue {
 	template <class T>
-	class is : public::core::UnaryExpression<T> {
+	class is : public Model::UnaryExpression<T> {
 	public:
 		virtual ~Is() {};
 	};

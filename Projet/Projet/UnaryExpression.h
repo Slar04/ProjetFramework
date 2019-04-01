@@ -3,7 +3,8 @@
 
 #include "pch.h"
 #include "Expression.h"
-namespace core {
+namespace Model {
+	
 	template <class T>
 	class UnaryExpression {
 	public:

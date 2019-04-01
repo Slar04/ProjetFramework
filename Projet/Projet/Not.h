@@ -3,10 +3,11 @@
 
 #include "UnaryExpression.h"
 
-template <class T>
-class Not : UnaryExpression<T> {
-public:
-	virtual T evaluate();
-};
-
+namespace fuzzy {
+	template <class T>
+	class Not : public::core::UnaryExpression<T> {
+	public:
+		virtual ~Not() {};
+	};
+}
 #endif

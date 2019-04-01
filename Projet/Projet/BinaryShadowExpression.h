@@ -7,9 +7,9 @@ namespace Model {
 	template <class T>
 	class BinaryShadowExpression : public BinaryExpression<T>
 	{
-		public:
-			T evaluate(Expression<T>*, Expression<T>*) const = 0;
+	public:
+		T evaluate(Expression<T>*, Expression<T>*) const = 0;
 
-}
+	}
 
 #endif

@@ -1,6 +1,7 @@
 #ifndef ORMAX_H
 #define ORMAX_H
 
+<<<<<<< HEAD
 #include "mainAnd.h"
 namespace fuzzy
 {
@@ -19,5 +20,21 @@ namespace fuzzy
 			return (lv >= rv) ? lv : rv;
 		}
 	};
+=======
+#include "Or.h"
+
+namespace fuzzy {
+	template <class T>
+	class OrMax : OR<T> {
+	public:
+
+		OrMax() {}
+		virtual ~OrMax() {}
+		virtual T& evaluate(core::Expression<T>*l, core::Expression<T>*r) const;
+	};
+
+	
+
+>>>>>>> 97abd2187b0bd8b04d4934d94972b9eda174aeef
 }
 #endif

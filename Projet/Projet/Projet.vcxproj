@@ -151,9 +151,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AddPlus.h" />
     <ClInclude Include="Agg.h" />
     <ClInclude Include="AggMax.h" />
+    <ClInclude Include="AggPlus.h" />
     <ClInclude Include="AndMult.h" />
     <ClInclude Include="BinaryExpressionModel.h" />
     <ClInclude Include="BinaryShadowExpression.h" />

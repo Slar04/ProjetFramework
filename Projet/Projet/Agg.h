@@ -2,11 +2,12 @@
 #define AGG_H
 
 #include "BynaryExpression.h"
-
-template <class T>
-class Agg : BynaryExpression<T> {
-public:
-	virtual T& evaluate();
-};
-
+namespace SemantiqueFloue {
+	template <class T>
+	class Agg : Model::BynaryExpression<T> {
+	public:
+		virtual ~Agg() {}
+		virtual T& evaluate();
+	};
+}
 #endif

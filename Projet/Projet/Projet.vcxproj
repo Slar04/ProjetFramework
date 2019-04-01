@@ -151,10 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AddPlus.h" />
     <ClInclude Include="Agg.h" />
     <ClInclude Include="AggMax.h" />
-    <ClInclude Include="AggPlus.h" />
     <ClInclude Include="AndMult.h" />
+    <ClInclude Include="BinaryExpressionModel.h" />
+    <ClInclude Include="BinaryShadowExpression.h" />
     <ClInclude Include="CogDefuzz.h" />
     <ClInclude Include="Expression.h" />
     <ClInclude Include="is.h" />
@@ -177,18 +179,11 @@
     <ClInclude Include="ThenMin.h" />
     <ClInclude Include="ThenMultl.h" />
     <ClInclude Include="UnaryExpression.h" />
+    <ClInclude Include="UnaryExpressionModel.h" />
     <ClInclude Include="ValueModel.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AndMin.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Projet.cpp" />
-    <ClCompile Include="ValueModel.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

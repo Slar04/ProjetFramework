@@ -3,9 +3,9 @@
 
 #include "UnaryExpression.h"
 
-namespace SemantiqueFloue {
+namespace fuzzy {
 	template <class T>
-	class Not : public Model::UnaryExpression<T> {
+	class Not : public::core::UnaryExpression<T> {
 	public:
 		virtual ~Not() {};
 	};

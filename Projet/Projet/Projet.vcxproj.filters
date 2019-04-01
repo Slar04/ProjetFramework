@@ -93,6 +93,9 @@
     <ClInclude Include="is.h">
       <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
     </ClInclude>
+    <ClInclude Include="NotMinus1.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
     <ClInclude Include="isTriangle.h">
       <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
     </ClInclude>
@@ -111,6 +114,9 @@
     <ClInclude Include="AggMax.h">
       <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
+    <ClInclude Include="AddPlus.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
     <ClInclude Include="Expression.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
@@ -119,12 +125,6 @@
     </ClInclude>
     <ClInclude Include="BinaryShadowExpression.h">
       <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="NotMinus.h">
-      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
-    </ClInclude>
-    <ClInclude Include="AggPlus.h">
-      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

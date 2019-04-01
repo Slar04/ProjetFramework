@@ -1,23 +1,40 @@
 #ifndef ORMAX_H
 #define ORMAX_H
 
+<<<<<<< HEAD
 #include "mainAnd.h"
+namespace fuzzy
+{
+	template <class T>
+	class OrMax : public OR<T> {
+	public:
+
+		OrMax() {}
+		virtual ~OrMax() {}
+		virtual T& evaluate(core::Expression<T>*, core::Expression<T>*);
+		template <class T>
+		T OrMax<T>::evaluate(core::Expression<T>* l, core::Expression<T>* r)
+		{
+			T lv = l->evaluate();
+			T rv = r->evaluate();
+			return (lv >= rv) ? lv : rv;
+		}
+	};
+=======
 #include "Or.h"
 
-namespace SemantiqueFloue {
+namespace fuzzy {
 	template <class T>
 	class OrMax : OR<T> {
 	public:
-		virtual ~OrMax() {}
-		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*) const;
 
+		OrMax() {}
+		virtual ~OrMax() {}
+		virtual T& evaluate(core::Expression<T>*l, core::Expression<T>*r) const;
 	};
 
-	template <class T>
-	T OrMax<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right) const {
-		T l = left->evaluate();
-		T r = right->evaluate();
-		return (l >= r) ? l : r;
-	}
+	
+
+>>>>>>> 97abd2187b0bd8b04d4934d94972b9eda174aeef
 }
 #endif

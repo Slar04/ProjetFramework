@@ -3,20 +3,22 @@
 
 #include "Or.h"
 
-namespace SemantiqueFloue {
+namespace fuzzy {
 	template <class T>
 	class OrPlus : public OR<T> {
 	public:
+
+		OrPlus() {}
 		virtual ~OrPlus() {}
-		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*) const;
+		virtual T evaluate(core::Expression<T>*l, core::Expression<T>*r) const;
 	};
 
 	template<class T>
-	T OrPlus<T>::evaluate(Model::Expression<T> *left, Model::Expression<T> *right) const {
-		T l = left->evaluate();
-		T r = right->evaluate();
+	T OrPlus<T>::evaluate(core::Expression<T> *l, core::Expression<T> *r) const {
+		T lv = l->evaluate();
+		T rv = r->evaluate();
 
-		return (l + l);
+		return (lv + lr);
 	}
 }
 #endif

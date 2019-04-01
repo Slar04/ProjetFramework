@@ -2,24 +2,22 @@
 #define THENMIN_H
 
 #include "Then.h"
-namespace SemantiqueFloue {
-
+namespace fuzzy
+{
 	template <class T>
 	class ThenMin : public Then<T> {
 	public:
 
 		TenMin() {}
 		virtual ~ThenMin() {}
-		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*);
-		
+		virtual T& evaluate(core::Expression<T>*, core::Expression<T>*);
+		template <class T>
+		T ThenMin<T>::evaluate(core::Expression<T>* l, core::Expression<T>* r)
+		{
+			T lv = l->evaluate();
+			T rv = r->evaluate();
+			return  (lv <= rv) ? lv : rv;
+		}
 	};
-
-	template <class T>
-	T ThenMin<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right)
-	{
-		T l = left->evaluate();
-		T r = right->evaluate();
-		return  (l <= r) ? l : r;
-	}
 }
 #endif

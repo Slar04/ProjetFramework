@@ -3,21 +3,21 @@
 
 #include "Then.h"
 
-namespace SemantiqueFloue {
+namespace fuzzy {
 	template <class T>
 	class ThenMult :public Then<T> {
 	public:
 
 		ThenMult() {}
 		virtual ~ThenMult() {}
-		virtual T evaluate(Model::Expression<T>* , Model::Expression<T>* ) const;
+		virtual T evaluate(core::Expression<T>* l, core::Expression<T>* r) const;
 	};
 
 	template <class T>
-	T ThenMult<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right) const {
-		T l = left->Evaluate();
-		T r = right->Evaluate();
-		return l * r;
+	T ThenMult<T>::evaluate(core::Expression<T>* l, core::Expression<T>* r) const {
+		T lv = l->Evaluate();
+		T rv = r->Evaluate();
+		return lv * rv;
 	}
 }
 

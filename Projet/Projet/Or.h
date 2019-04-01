@@ -3,12 +3,10 @@
 
 #include "BynaryExpression.h"
 
-namespace SemantiqueFloue {
-	template <class T>
-	class OR : Model::BynaryExpression<T> {
-	public:
-		virtual ~Or() {};
-		virtual T& evaluate();
-	};
-}
+template <class T>
+class OR : BynaryExpression<T> {
+public:
+	virtual T& evaluate();
+};
+
 #endif

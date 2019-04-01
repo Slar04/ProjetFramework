@@ -151,7 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AggPlus.h" />
+    <ClInclude Include="AddPlus.h" />
     <ClInclude Include="Agg.h" />
     <ClInclude Include="AggMax.h" />
     <ClInclude Include="AndMult.h" />
@@ -167,7 +167,7 @@
     <ClInclude Include="MandaniDefuzz.h" />
     <ClInclude Include="NaryExpression.h" />
     <ClInclude Include="Not.h" />
-    <ClInclude Include="NotMinus.h" />
+    <ClInclude Include="NotMinus1.h" />
     <ClInclude Include="Or.h" />
     <ClInclude Include="OrMax.h" />
     <ClInclude Include="OrPlus.h" />

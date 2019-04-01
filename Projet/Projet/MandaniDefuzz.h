@@ -3,16 +3,13 @@
 
 #include "mainAnd.h"
 
-namespace SemantiqueFloue {
+template <class T>
+class MandaniDefuzz : And<T> {
+public:
 
-	template <class T>
-	class MandaniDefuzz : And<T> {
-	public:
+	MandaniDefuzz() {}
+	virtual ~MandaniDefuzz() {}
+	virtual T evaluate(Expression&, Expression&);
+};
 
-		MandaniDefuzz() {}
-		virtual ~MandaniDefuzz() {}
-		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*);
-	};
-
-}
 #endif

@@ -1,15 +1,24 @@
 #ifndef AGGPLUS_H
 #define AGGPLUS_H
 
-#include "AggMax.h"
+#include "Agg.h"
 
-template <class T>
-class AggPlus : Agg<T> {
-public:
+namespace SemantiqueFloue{
 
-	AggPlus() {}
-	virtual ~AggPlus() {}
-	virtual T& evaluate(Expression&, Expression&);
-};
+	template <class T>
+	class AggPlus : Agg<T> {
+	public:
 
+		AggPlus() {}
+		virtual ~AggPlus() {}
+		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*) const;
+	};
+
+	template <class T>
+	T AggPlus<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right) const{
+		T l = left->Evaluate();
+		T r = right->Evaluate();
+		return l + r;
+	}
+}
 #endif

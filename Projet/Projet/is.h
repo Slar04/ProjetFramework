@@ -2,11 +2,11 @@
 #define IS_H
 
 #include "UnaryExpression.h"
-
-template <class T>
-class is : UnaryExpression<T>{
-public:
-	virtual T evaluate();
-};
-
+namespace SemantiqueFloue {
+	template <class T>
+	class is : public Model::UnaryExpression<T> {
+	public:
+		virtual ~Is() {};
+	};
+}
 #endif

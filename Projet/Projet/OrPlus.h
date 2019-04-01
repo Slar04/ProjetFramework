@@ -3,13 +3,20 @@
 
 #include "Or.h"
 
-template <class T>
-class OrPlus : OR<T> {
-public:
+namespace SemantiqueFloue {
+	template <class T>
+	class OrPlus : public OR<T> {
+	public:
+		virtual ~OrPlus() {}
+		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*) const;
+	};
 
-	OrPlus() {}
-	virtual ~OrPlus() {}
-	virtual T& evaluate(Expression&, Expression&);
-};
+	template<class T>
+	T OrPlus<T>::evaluate(Model::Expression<T> *left, Model::Expression<T> *right) const {
+		T l = left->evaluate();
+		T r = right->evaluate();
 
+		return (l + l);
+	}
+}
 #endif

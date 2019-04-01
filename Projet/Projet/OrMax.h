@@ -1,15 +1,23 @@
 #ifndef ORMAX_H
 #define ORMAX_H
 
+#include "mainAnd.h"
 #include "Or.h"
 
-template <class T>
-class OrMax : OR<T> {
-public:
+namespace SemantiqueFloue {
+	template <class T>
+	class OrMax : OR<T> {
+	public:
+		virtual ~OrMax() {}
+		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*) const;
 
-	OrMax(){}
-	virtual ~OrMax(){}
-	virtual T& evaluate(Expression&, Expression&);
-};
+	};
 
+	template <class T>
+	T OrMax<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right) const {
+		T l = left->evaluate();
+		T r = right->evaluate();
+		return (l >= r) ? l : r;
+	}
+}
 #endif

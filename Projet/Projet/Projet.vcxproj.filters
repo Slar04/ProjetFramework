@@ -16,9 +16,6 @@
     <Filter Include="Header Files\SemantiqueFlou">
       <UniqueIdentifier>{031a07a9-e10d-487d-b086-529c465c828a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Concepts">
-      <UniqueIdentifier>{b57240ec-66df-4000-9b2e-12a1fcee4854}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Concepts">
       <UniqueIdentifier>{89e193a8-2ed8-4659-9496-748b1746e2d5}</UniqueIdentifier>
     </Filter>
@@ -34,24 +31,15 @@
     <Filter Include="Header Files\SemantiqueFlou\UnaryExpression">
       <UniqueIdentifier>{9708532f-3df4-459b-ba47-21a4f887d78c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Model">
+      <UniqueIdentifier>{b57240ec-66df-4000-9b2e-12a1fcee4854}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ValueModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Expression.h">
-      <Filter>Header Files\Concepts</Filter>
-    </ClInclude>
     <ClInclude Include="Agg.h">
-      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
-    </ClInclude>
-    <ClInclude Include="AggMax.h">
-      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
-    </ClInclude>
-    <ClInclude Include="AggPlus.h">
       <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
     <ClInclude Include="AndMult.h">
@@ -67,9 +55,6 @@
       <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
     <ClInclude Include="MandaniDefuzz.h">
-      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
-    </ClInclude>
-    <ClInclude Include="BynaryExpression.h">
       <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
     <ClInclude Include="Or.h">
@@ -108,28 +93,43 @@
     <ClInclude Include="is.h">
       <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
     </ClInclude>
-    <ClInclude Include="NotMinus1.h">
-      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
-    </ClInclude>
     <ClInclude Include="isTriangle.h">
       <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
     </ClInclude>
     <ClInclude Include="UnaryExpression.h">
       <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
     </ClInclude>
+    <ClInclude Include="UnaryExpressionModel.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryExpressionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="BynaryExpression.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="AggMax.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPlus.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="Expression.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryShadowExpression.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMinus.h">
+      <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Projet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ValueModel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AndMin.cpp">
-      <Filter>Source Files\SemantiqueFlou</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

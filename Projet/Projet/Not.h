@@ -3,10 +3,11 @@
 
 #include "UnaryExpression.h"
 
-template <class T>
-class Not : UnaryExpression<T> {
-public:
-	virtual T evaluate();
-};
-
+namespace SemantiqueFloue {
+	template <class T>
+	class Not : public Model::UnaryExpression<T> {
+	public:
+		virtual ~Not() {};
+	};
+}
 #endif

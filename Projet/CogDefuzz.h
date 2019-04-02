@@ -17,8 +17,6 @@ namespace SemantiqueFloue {
 
 		T l = left->evaluate();
 		T r = right->evaluate();
-
-
 		
 	}
 

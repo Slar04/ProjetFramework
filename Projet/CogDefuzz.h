@@ -1,7 +1,7 @@
 #ifndef COGDEFUZZ_H
 #define COGDEFUZZ_H
 
-#include "mainAnd.h"
+#include "And.h"
 namespace SemantiqueFloue {
 
 	template <class T>
@@ -17,8 +17,6 @@ namespace SemantiqueFloue {
 
 		T l = left->evaluate();
 		T r = right->evaluate();
-
-
 		
 	}
 

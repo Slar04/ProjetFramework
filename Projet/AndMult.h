@@ -1,7 +1,7 @@
 #ifndef ANDMULT_H
 #define ANDMULT_H
 
-#include "mainAnd.h"
+#include "And.h"
 namespace SemantiqueFloue {
 	template <class T>
 	class AndMult :public And<T> {

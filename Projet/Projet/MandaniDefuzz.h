@@ -1,7 +1,7 @@
 #ifndef MANDANIDEFUZZ_H
 #define MANDANIDEFUZZ_H
 
-#include "mainAnd.h"
+#include "And.h"
 
 namespace SemantiqueFloue {
 

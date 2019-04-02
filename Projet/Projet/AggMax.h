@@ -12,12 +12,14 @@ namespace SemantiqueFloue {
 		virtual ~AggMax() {}
 		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*) const;
 
-		template <class T>
-		T AggMax<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right) {
-			T l = left->evaluate();
-			T r = right->evaluate();
-			return (l >= r) ? l : r;
-		}
+	
 	};
+
+	template <class T>
+	T AggMax<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right) const{
+		T l = left->evaluate();
+		T r = right->evaluate();
+		return (l >= r) ? l : r;
+	}
 }
 #endif

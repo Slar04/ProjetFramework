@@ -9,7 +9,7 @@ namespace SemantiqueFloue {
 	class Then : Model::BynaryExpression<T> {
 	public:
 		virtual ~Then() {}
-		virtual T& evaluate();
+		virtual T evaluate();
 	};
 }
 #endif

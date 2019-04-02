@@ -8,7 +8,7 @@ namespace SemantiqueFloue {
 	class OR : Model::BynaryExpression<T> {
 	public:
 		virtual ~Or() {};
-		virtual T& evaluate();
+		virtual T evaluate();
 	};
 }
 #endif

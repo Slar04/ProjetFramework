@@ -1,7 +1,7 @@
 #ifndef COGDEFUZZ_H
 #define COGDEFUZZ_H
 
-#include "mainAnd.h"
+#include "And.h"
 namespace SemantiqueFloue {
 
 	template <class T>

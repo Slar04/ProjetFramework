@@ -7,7 +7,8 @@ namespace SemantiqueFloue {
 	class Agg : Model::BynaryExpression<T> {
 	public:
 		virtual ~Agg() {}
-		virtual T& evaluate();
+
+		virtual T evaluate();
 	};
 }
 #endif

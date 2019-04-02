@@ -16,8 +16,8 @@ namespace SemantiqueFloue{
 
 	template <class T>
 	T AggPlus<T>::evaluate(Model::Expression<T>* left, Model::Expression<T>* right) const{
-		T l = left->Evaluate();
-		T r = right->Evaluate();
+		T l = left->evaluate();
+		T r = right->evaluate();
 		return l + r;
 	}
 }

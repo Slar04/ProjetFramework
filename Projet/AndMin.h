@@ -1,7 +1,7 @@
 #ifndef ANDMIN_H
 #define ANDMIN_H
 
-#include "mainAnd.h"
+#include "And.h"
 
 namespace SemantiqueFloue {
 

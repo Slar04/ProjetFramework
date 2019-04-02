@@ -1,5 +1,5 @@
-#ifndef MAINAND_H
-#define MAINAND_H
+#ifndef AND_H
+#define AND_H
 
 #include "BynaryExpression.h"
 
@@ -9,7 +9,7 @@ namespace SemantiqueFloue {
 	public:
 		virtual ~And(){}
 
-		virtual T& evaluate();
+		virtual T evaluate();
 	};
 }
 #endif

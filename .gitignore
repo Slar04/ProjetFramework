@@ -6,3 +6,4 @@ Projet/.vs/Projet/v15/Browse.VC.opendb
 *.opendb
 .vs/*
 x64/*
+*.ipch

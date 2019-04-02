@@ -154,6 +154,7 @@
     <ClInclude Include="Agg.h" />
     <ClInclude Include="AggMax.h" />
     <ClInclude Include="AggPlus.h" />
+    <ClInclude Include="And.h" />
     <ClInclude Include="AndMult.h" />
     <ClInclude Include="BinaryExpressionModel.h" />
     <ClInclude Include="BinaryShadowExpression.h" />
@@ -161,7 +162,6 @@
     <ClInclude Include="Expression.h" />
     <ClInclude Include="is.h" />
     <ClInclude Include="isTriangle.h" />
-    <ClInclude Include="mainAnd.h" />
     <ClInclude Include="AndMin.h" />
     <ClInclude Include="BynaryExpression.h" />
     <ClInclude Include="MandaniDefuzz.h" />

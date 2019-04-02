@@ -48,9 +48,6 @@
     <ClInclude Include="AndMin.h">
       <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
-    <ClInclude Include="mainAnd.h">
-      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
-    </ClInclude>
     <ClInclude Include="CogDefuzz.h">
       <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
@@ -124,6 +121,9 @@
       <Filter>Header Files\SemantiqueFlou\UnaryExpression</Filter>
     </ClInclude>
     <ClInclude Include="AggPlus.h">
+      <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
+    </ClInclude>
+    <ClInclude Include="And.h">
       <Filter>Header Files\SemantiqueFlou\BinaryExp</Filter>
     </ClInclude>
   </ItemGroup>

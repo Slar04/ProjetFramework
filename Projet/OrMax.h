@@ -1,7 +1,7 @@
 #ifndef ORMAX_H
 #define ORMAX_H
 
-#include "mainAnd.h"
+#include "And.h"
 #include "Or.h"
 
 namespace SemantiqueFloue {

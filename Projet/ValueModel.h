@@ -1,8 +1,6 @@
 #ifndef VALUEMODEL_H
 #define VALUEMODEL_H
 
-#include "pch.h"
-
 namespace Model {
 
 	template <class T>
@@ -14,7 +12,7 @@ namespace Model {
 		virtual ~ValueModel() {};
 
 		void SetValue(const T&);
-		virtual T Evaluate() const;
+		virtual T evaluate() const;
 
 	private:
 		T v;
@@ -27,7 +25,7 @@ namespace Model {
 	}
 
 	template <class T>
-	T ValueModel<T>::Evaluate() const
+	T ValueModel<T>::evaluate() const
 	{
 		return v;
 	}

@@ -1,14 +1,13 @@
 #ifndef AGG_H
 #define AGG_H
 
-#include "BynaryExpression.h"
+#include "BinaryExpression.h"
+
 namespace SemantiqueFloue {
 	template <class T>
-	class Agg : Model::BynaryExpression<T> {
+	class Agg : Model::BinaryExpression<T> {
 	public:
 		virtual ~Agg() {}
-
-		virtual T evaluate();
 	};
 }
 #endif

@@ -1,0 +1,2 @@
+﻿  Source.cpp
+c:\users\rigo\desktop\uha\frameworks\projetframework\projet\projet\source.cpp(1): fatal error C1083: Cannot open precompiled header file: 'x64\Debug\Projet.pch': No such file or directory

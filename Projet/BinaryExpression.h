@@ -1,14 +1,16 @@
-#ifndef BYNARYEXPRESSION_H
-#define BYNARYEXPRESSION_H
+#ifndef BINARYEXPRESSION_H
+#define BINARYEXPRESSION_H
 
 //#include "pch.h"
 #include "Expression.h"
 
 namespace Model {
 	template <class T>
-	class BynaryExpression {
+	class BinaryExpression {
 	public:
 		BinaryExpression() {};
+		virtual ~BinaryExpression() {};
+
 		virtual T evaluate(Expression<T>*, Expression<T>*) const = 0;
 	};
 }

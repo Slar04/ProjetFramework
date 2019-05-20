@@ -1,18 +1,18 @@
 #ifndef ISTRIANGLE_H
 #define ISTRIANGLE_H
 
-#include "is.h"
+#include "Is.h"
 
 namespace SemantiqueFloue {
 	template <class T>
 	class isTriangle : is<T> {
 	public:
-		virtual ~isTriangle() {}
-		virtual isTriangle() {}
-		isTriangle(min, mid, max):min(min), mid(mid), max(max) {};
+		virtual ~IsTriangle() {};
+		virtual IsTriangle() {};
+		IsTriangle(T min,T mid,T max): min(min), mid(mid), max(max) {};
 
 		virtual T evaluate(Model::Expression<T>* v);
-		virtual T Model::evaluate(Model::Expression<T>*);
+		//virtual T Model::evaluate(Model::Expression<T>*);
 		
 	private:
 		T min, mid, max;

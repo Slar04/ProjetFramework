@@ -1,20 +1,25 @@
 #ifndef COGDEFUZZ_H
 #define COGDEFUZZ_H
 
-#include "And.h"
+#include "MamdaniDefuzz.h"
+#include <iostream>
+#include <vector>
+
 namespace SemantiqueFloue {
 
 	template <class T>
-	class CogDefuzz : And<T> {
+	class CogDefuzz : public MamdaniDefuzz<T>
+	{
 	public:
-		CogDefuzz() {}
-		virtual ~CogDefuzz() {}
-		virtual T Defuzz(const Shape*) const;
+		CogDefuzz() {};
+		~CogDefuzz() {};
+
+	protected:
+		virtual T Defuzz(typename Evaluator<T>::Shape) const;
 	};
 
 	template <class T>
-	T CogDefuzz<T>::Defuzz(const Shape* s) const
-	{
+	T CogDefuzz<T>::Defuzz(typename Evaluator<T>::Shape s) const {
 		std::vector<T> product;
 		std::vector<T>::const_iterator itY = s.second.begin();
 		std::vector<T>::const_iterator itX = s.first.begin();

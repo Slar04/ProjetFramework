@@ -16,7 +16,7 @@ namespace SemantiqueFloue {
 		T l = left->evaluate();
 		T r = right->evaluate();
 
-		return (l + l);
+		return (l + r < 1) ? l + r : 1;
 	}
 }
 #endif

@@ -159,15 +159,21 @@
     <ClInclude Include="BinaryExpressionModel.h" />
     <ClInclude Include="BinaryShadowExpression.h" />
     <ClInclude Include="CogDefuzz.h" />
+    <ClInclude Include="Evaluator.h" />
     <ClInclude Include="Expression.h" />
-    <ClInclude Include="is.h" />
-    <ClInclude Include="isTriangle.h" />
+    <ClInclude Include="ExpressionFactory.h" />
+    <ClInclude Include="FuzzyFactory.h" />
+    <ClInclude Include="Is.h" />
+    <ClInclude Include="IsTriangle.h" />
     <ClInclude Include="AndMin.h" />
-    <ClInclude Include="BynaryExpression.h" />
-    <ClInclude Include="MandaniDefuzz.h" />
+    <ClInclude Include="BinaryExpression.h" />
+    <ClInclude Include="MamdaniDefuzz.h" />
     <ClInclude Include="NaryExpression.h" />
+    <ClInclude Include="NaryExpressionModel.h" />
+    <ClInclude Include="NaryShadowExpression.h" />
     <ClInclude Include="Not.h" />
     <ClInclude Include="NotMinus.h" />
+    <ClInclude Include="NullExpressionException.h" />
     <ClInclude Include="Or.h" />
     <ClInclude Include="OrMax.h" />
     <ClInclude Include="OrPlus.h" />
@@ -180,6 +186,7 @@
     <ClInclude Include="ThenMultl.h" />
     <ClInclude Include="UnaryExpression.h" />
     <ClInclude Include="UnaryExpressionModel.h" />
+    <ClInclude Include="UnaryShadowExpression.h" />
     <ClInclude Include="ValueModel.h" />
   </ItemGroup>
   <ItemGroup>

@@ -9,10 +9,10 @@ namespace SemantiqueFloue {
 	class SugenoThen : Then<T> {
 	public:
 
-		SugenoThen() {}
+		SugenoThen():premiseValue(0) {}
 		virtual ~SugenoThen() {}
 		virtual T evaluate(Model::Expression<T>*, Model::Expression<T>*) const;
-		T getPV()const;
+		virtual T getPV() const;
 
 	private:
 		T premiseValue;

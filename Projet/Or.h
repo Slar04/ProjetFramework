@@ -1,14 +1,14 @@
 #ifndef OR_H
 #define OR_H
 
-#include "BynaryExpression.h"
+#include "BinaryExpression.h"
 
 namespace SemantiqueFloue {
 	template <class T>
-	class OR : Model::BynaryExpression<T> {
+	class Or : Model::BinaryExpression<T> {
 	public:
+		virtual Or() {};
 		virtual ~Or() {};
-		virtual T evaluate();
 	};
 }
 #endif

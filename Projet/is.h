@@ -4,7 +4,7 @@
 #include "UnaryExpression.h"
 namespace SemantiqueFloue {
 	template <class T>
-	class is : public Model::UnaryExpression<T> {
+	class Is : public Model::UnaryExpression<T> {
 	public:
 		virtual ~Is() {};
 	};
